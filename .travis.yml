@@ -1,0 +1,4 @@
+language: c
+compiler:
+    - gcc
+script: make mx2_defconfig; make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
