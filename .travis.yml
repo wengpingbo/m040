@@ -1,4 +1,6 @@
 language: c
+before_install:
+    - sudo apt-get install gcc-4.6-arm-linux-gnueabi
 compiler:
     - gcc
 script: make mx2_defconfig; make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
